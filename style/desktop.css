@@ -177,6 +177,9 @@ footer {
         top: 0%;
         font-size: 14px;
     }
+    .gallery-main {
+        padding-bottom: 50%;
+    }
     .gallery-main > p{
         width: 50%;
         font-size: 16px;
