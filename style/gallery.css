@@ -1,0 +1,250 @@
+:root {
+    color-scheme: dark;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("../images/main/back.png");
+    image-orientation: from-image;
+    min-height: calc(100% - 70px);
+}
+
+/* Header */
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 11%;
+    background: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0) 100%);
+    mix-blend-mode: normal;
+}
+.logo {
+    position: relative;
+    width: 200px;
+    height: 100%;
+    left: 45%;
+}
+
+/* Main-Info */
+main {
+    position: absolute;
+    width: 80%;
+    height: 16rem;
+    left: 10%;
+    top: 10%;
+
+    background: rgba(0, 0, 0, 0.85);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(2px);
+    border-radius: 12px; 
+}
+
+/* Gallery */
+
+.gallery {
+    position: absolute;
+    width: 95%;
+    height: 150%;
+    left: 2.5%;
+    margin-top: 2.5%;
+    background: rgba(0, 0, 0, 0.85);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+}
+
+.gallery-main {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-main > a{
+    position: relative;
+    width: fit-content;
+    height: 1%;
+    left: 5%;
+    top: 5%;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2%;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    cursor: default;
+    transition: 0.2s;
+    text-decoration: none;
+    cursor: pointer;
+    text-shadow: 0 0 15px#FFF;
+}
+.gallery-main > a:hover {
+    color: pink;
+    transform: scale(1.04);
+    text-shadow: 0 0 30px pink;
+    
+}
+
+.gallery-main > p{
+    position: relative;
+    width: 20%;
+    height: 10%;
+    left: 45%;
+    top: 1%;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 20%;
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    cursor: default;
+}
+
+.images {
+    position: relative;
+    width: 100%;
+    height: 30%;
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 1% 0%;
+    box-sizing: border-box;
+    height: 100%;
+}
+  
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .2s;
+    margin: 0% 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+    border-radius: 12px;
+}
+  
+.box > img {
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+    transition: .2s;
+}
+  
+.box > span {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    height: 1vh;
+    line-height: 1.6;
+}
+  
+.box:hover { flex: 1 1 20%;}
+.box:hover > img {
+    width: 100%;
+    height: 100%;
+}
+   
+
+/* Footer */
+footer {
+    width: 100%;
+    height: 70px;
+    margin-top: 85%;
+    background: #000;
+    background: linear-gradient(0deg, #000 0%, rgba(0, 0, 0, 0) 200%);
+    mix-blend-mode: normal;
+}
+.footer-info {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    left: 5%;
+    top: 7%;
+}
+.footer-info > p {
+
+    color: #FFF;
+}
+
+.footer-icons {
+    position: relative;
+    left: 80%;
+    width: 15%;
+    height: 50%;
+    bottom: 35%;
+}
+
+.footer-icons > a > img {
+    width: 17.5%;
+    height: 135%;
+    margin-left: 1rem;
+    transition: 0.5s;
+}
+.footer-icons > a > img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 7.5px rgba(255, 255, 255, 0.377));
+}
+
+
+/* MULTI-RES */
+@media screen and (max-width: 450px){
+    /* Header */
+    .logo {
+        width: 50%;
+        left: 25%;
+    }
+
+    /* Main */
+    main {
+        height: 10rem;
+        top: 10%;
+    }
+    .main-text {
+        top: 0%;
+        font-size: 14px;
+    }
+    .gallery-main > p{
+        width: 50%;
+        font-size: 16px;
+        left: 33.5%;
+        top: 2.5%;
+    }
+    .images {
+        left: 13%;
+    }
+    .images > img {
+        width: 100px;
+        height: 50px;
+    }
+
+    /* Footer */
+    .footer-info {
+        position: relative;
+        width: 70%;
+        height: 50%;
+        left: 4%;
+        top: 12%;
+    }
+    .footer-info > p{
+        font-size: 12px;
+    }
+    .footer-icons {
+        left: 65%;
+        width: 35%;
+        bottom: 25%;
+    }
+    
+    .footer-icons > a > img {
+        width: 25%;
+        height: 90%;
+        margin-left: 1rem;
+        transition: 0.5s;
+    }
+}
