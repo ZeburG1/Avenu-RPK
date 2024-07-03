@@ -19,7 +19,7 @@
             <div class="gallery">
                 <div class="gallery-main">
                     <p>Галерея работ</p>
-                    <a class="images" href="gallery.html">
+                    <a class="images" href="gallery.php">
                         <img src="images/gallery/photo_2024-06-30_17-26-29.jpg">
                         <img src="images/gallery/photo_2024-06-30_17-26-28 (2).jpg">
                         <img src="images/gallery/photo_2024-06-30_17-26-28.jpg">
@@ -48,5 +48,15 @@
                 <a href="https://github.com/ZeburG1"><img src="images/github.png"></a>
             </div>
         </footer>
+        <script type="text/javascript" src="scripts/main.js"></script>
     </body>
 </html>
+<?php 
+// Для будущей админ панели
+$link=mysqli_connect("localhost", "root", "", "JapanSrv");
+if ($link != 0 || $link != "0"){
+    echo "<script>console.log('Подключилось')</script>";
+} else {
+    echo "<script>console.log('Не подключилось')</script>";
+}
+?>

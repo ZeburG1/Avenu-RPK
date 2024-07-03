@@ -25,6 +25,7 @@ header {
     width: 200px;
     height: 100%;
     left: 45%;
+    transition: 0.2s;
 }
 
 /* Main-Info */

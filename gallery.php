@@ -15,7 +15,7 @@
 
         <main class="gallery">
             <div class="gallery-main">
-                <a href="./index.html">На главную</a>
+                <a href="./index.php">На главную</a>
                 <p>Галерея работ</p>
                 <div class="images">
                     <div class="container">
@@ -98,5 +98,15 @@
                 <a href="https://github.com/ZeburG1"><img src="images/github.png"></a>
             </div>
         </footer>
+        <script type="text/javascript" src="scripts/main.js"></script>
     </body>
 </html>
+<?php
+// Для будущей админ панели
+$link=mysqli_connect("localhost", "login", "password", "name");
+if ($link != 0 || $link != "0"){
+    echo "<script>console.log('Подключилось')</script>";
+} else {
+    echo "<script>console.log('Не подключилось')</script>";
+}
+?>
