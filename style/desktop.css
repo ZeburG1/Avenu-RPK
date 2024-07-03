@@ -182,11 +182,11 @@ footer {
     .gallery-main > p{
         width: 50%;
         font-size: 16px;
-        left: 33.5%;
+        left: 30%;
         top: 2.5%;
     }
     .images {
-        left: 13%;
+        left: 9%;
     }
     .images > img {
         width: 100px;
