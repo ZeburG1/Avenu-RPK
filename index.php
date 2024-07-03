@@ -53,7 +53,7 @@
 </html>
 <?php 
 // Для будущей админ панели
-$link=mysqli_connect("localhost", "root", "", "JapanSrv");
+$link=mysqli_connect("localhost", "login", "password", "namedb");
 if ($link != 0 || $link != "0"){
     echo "<script>console.log('Подключилось')</script>";
 } else {
